@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family: serif;
+    padding: 0 20px;
+}
+
+.shirt {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card {
+    width: 23%;
+    margin-bottom: 20px;
+
+
+}
+
+.shirt:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+.aer {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.shop {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.eco {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.add {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -380px; 
+    width: 360px;
+    height: 730px;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right 0.4s ease-in-out; 
+    z-index: 1000;
+    
+}
+
+.cart-sidebar.active {
+    right: 0; 
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.cart-header #close-cart {
+    font-size: 22px;
+    cursor: pointer;
+    color: #161616;
+    transition: color 0.2s;
+}
+
+.cart-header #close-cart:hover {
+    color: #ff3838;
+}
+
+.cart-divider {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cart-content {
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+.cart-footer {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.total-price {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buy-btn:hover {
+    background-color: #e63939;
+}
+
+.cart-overlay.active {
+    display: block;
+}
+
+.small{
+    width: 80px;
+    height: 80px;
+}
+
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#trash{
+    color: #ff3838;
+}
+
+#trash:hover{
+    color: #e63939;
+}
+
+
+.card-box h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-box h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-box input{
+    width: 40px;
+}
+
+#face-bar:hover{
+    color: #4a4646;
+}
+
+#face-bar {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-quantity-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4757;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}#face-bar {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-quantity-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4757;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}
