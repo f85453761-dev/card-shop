@@ -32,7 +32,7 @@ function ready() {
     }
 }
 
-// "Buy Now" tugmasi bosilganda ishlaydigan funksiya
+// "Buy Now" tugmasi bosilganda
 function buyButtonClicked() {
     let cartContent = document.querySelector('.cart-content');
     let cartBoxes = cartContent.querySelectorAll('.card-box');
@@ -44,7 +44,6 @@ function buyButtonClicked() {
 
     alert('Xaridingiz amalga oshirildi!');
 
-    // Savatchani tozalash
     while (cartContent.hasChildNodes()) {
         cartContent.removeChild(cartContent.firstChild);
     }
@@ -62,7 +61,6 @@ function addToCard(e) {
 
     let cartContent = document.querySelector('.cart-content');
 
-    // Takrorlanishni oldini olish
     let cartTitles = cartContent.querySelectorAll('.title');
     for (let i = 0; i < cartTitles.length; i++) {
         if (cartTitles[i].textContent === title) {
@@ -106,7 +104,7 @@ function cartQuantity(e) {
     cartTotal();
 }
 
-// Domlangiz uslubidagi cartTotal funksiyasi (miqdor va narxni hisoblash)
+// Domlangiz uslubidagi cartTotal funksiyasi
 function cartTotal() {
     let cartBoxes = document.querySelectorAll(".card-box");
     let total = 0;

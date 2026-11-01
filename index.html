@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
-    <!-- FontAwesome ikonkalari uchun -->
+    <!-- FontAwesome ikonkalari -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar qismi -->
+    <!-- Header qismi -->
     <header class="header">
         <div class="logo">Ecommerce</div>
         
-        <!-- Savatcha ikonkasi va qizil doiradagi son -->
+        <!-- Savatcha ikonkasi va mahsulotlar soni (badge) -->
         <div id="face-bar">
             <i class="fa-solid fa-bag-shopping"></i>
             <span class="cart-quantity-count">0</span>
         </div>
     </header>
 
-    <!-- Asosiy mahsulotlar qismi -->
+    <!-- Asosiy mahsulotlar -->
     <main class="shop-container">
         <h1>Shop products</h1>
         <div class="shop-content">
@@ -51,14 +51,14 @@
         </div>
     </main>
 
-    <!-- Savatcha Sidebar (Yon panel) -->
+    <!-- Savatcha Sidebar -->
     <div id="cart-sidebar" class="cart">
         <h2 class="cart-title">Your Cart</h2>
 
-        <!-- Savatchaga qo'shilgan mahsulotlar chiqadigan joy -->
+        <!-- Mahsulotlar tushadigan joy -->
         <div class="cart-content"></div>
 
-        <!-- Jami summa qismi -->
+        <!-- Jami summa -->
         <div class="total">
             <div class="total-title">Total</div>
             <div id="total-amount">$0</div>
@@ -71,9 +71,9 @@
         <i class="fa-solid fa-xmark" id="close-cart"></i>
     </div>
 
-    <!-- Orqa fon qorayishi uchun overlay -->
+    <!-- Overlay (Orqa fon qorayishi) -->
     <div id="cart-overlay" class="overlay"></div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

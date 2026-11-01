@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Header dizayni */
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,7 @@ body {
     font-weight: bold;
 }
 
-/* Savatcha ikonkasi va Badge (Qizil doiracha) */
+/* Savatcha ikonkasi va badge */
 #face-bar {
     position: relative;
     cursor: pointer;
@@ -55,8 +55,7 @@ body {
 }
 
 .shop-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
     gap: 20px;
 }
 
@@ -65,11 +64,12 @@ body {
     padding: 15px;
     border-radius: 8px;
     position: relative;
+    width: 250px;
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -94,7 +94,7 @@ body {
     border-radius: 50%;
 }
 
-/* Savatcha Sidebar (Yon panel) */
+/* Savatcha Sidebar */
 #cart-sidebar {
     position: fixed;
     top: 0;
@@ -124,7 +124,7 @@ body {
     overflow-y: auto;
 }
 
-/* Savatchadagi mahsulot kartochkasi */
+/* Savatchadagi mahsulot */
 .card-box {
     display: flex;
     align-items: center;
@@ -192,7 +192,6 @@ body {
     cursor: pointer;
     border-radius: 4px;
     margin-top: 15px;
-    transition: background 0.3s;
 }
 
 .buy-btn:hover {
@@ -207,7 +206,7 @@ body {
     cursor: pointer;
 }
 
-/* Overlay qismi */
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -221,20 +220,4 @@ body {
 
 .overlay.active {
     display: block;
-}
-
-/* Telefonlar uchun moslashuvchanlik (Media queries) */
-@media (max-width: 768px) {
-    #cart-sidebar {
-        width: 100% !important;
-        right: -100%;
-    }
-    
-    .header {
-        padding: 15px 20px;
-    }
-
-    .shop-container {
-        padding: 20px;
-    }
 }
